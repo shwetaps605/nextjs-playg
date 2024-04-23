@@ -1,9 +1,8 @@
 'use client'
 
 const Error = (error) => {
-    console.log(error)
     return(
-        <div>
+        <div className="p-5 bg-red-300 text-black text-xl rounded-md">
             {error.error.message}
         </div>
     );
