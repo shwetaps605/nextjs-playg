@@ -25,7 +25,6 @@ const ClientPage = () => {
                 <button className="bg-white border-slate-600 border px-5 outline-none hover:bg-slate-200 text-black" onClick={incrementCount}>+</button>
                 <button className="bg-white border-slate-600 border px-5 outline-none hover:bg-slate-200 text-black" onClick={decrementCount}>-</button>
             </div>
-            
         </div>
     )
 };
