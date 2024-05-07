@@ -1,11 +1,14 @@
+import TaskList from "@/components/TaskList";
+import TaskForm from "@/components/TaskForm";
 
 
 const TasksPage = () => {
     return(
-        <div className="text-3xl">
-            Tasks Page
-        </div>
-    )
+        <section>
+         <TaskForm/>
+         <TaskList />
+        </section>
+     )
 }
 
 export default TasksPage;

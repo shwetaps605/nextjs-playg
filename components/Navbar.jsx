@@ -3,20 +3,18 @@ import Link from "next/link";
 const Navbar = () => {
 
     const myComponentStyle = {
-        color: 'blue',
-        lineHeight: 10,
+        color: 'black',
+        backgroundColor: "#fefefe"
     }
 
     const navLinkStyle = {
         marginLeft: '1.5em',
-
     }
 
     const links = [
         {href:'/client',label:'client'},
         {href:'/drinks',label:'drinks'},
         {href:'/prisma-example',label:'prisma-example'},
-        {href:'/query',label:'query'},
         {href:'/tasks',label:'tasks'}
     ]
 
