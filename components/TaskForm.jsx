@@ -1,23 +1,9 @@
-import prisma from "@/utils/db"
-import { revalidatePath } from "next/cache"
-//formData: out of the box web api that gives form data
-const createTask = async (formData) => {
-    'use server'
-    const content = formData.get('content')
-    console.log("content->", content)
-    await prisma.task.create({
-        data:{
-            content: content
-        }
-    })
-    revalidatePath('/tasks')
-
-}
+import { addTask } from "@/utils/actions";
 
 
 const TaskForm = () => {
     return(
-        <form action={createTask}>
+        <form action={addTask}>
             <div className="flex">
                 <input
                     type="text"
