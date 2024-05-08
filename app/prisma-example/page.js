@@ -1,10 +1,15 @@
+import prisma from "@/utils/db";
 
 
-const PrismaPage = () => {
+
+
+
+const PrismaPage =  async () => {
+
     return(
-        <div className="text-3xl">
-            Prisma example Page
-        </div>
+       <section>
+       Prisma Example Page
+       </section>
     )
 }
 
